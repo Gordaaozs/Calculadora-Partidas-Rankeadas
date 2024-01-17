@@ -1,40 +1,28 @@
 // Calculadora de partidas Rankeadas
- let nomedojogador = "Gordaaoo"
- let niveldojogador = "134"
- let nivelRankeada = soma(34, 10)
-  console.log ("diga")
+let nomedojogador = "Gordaaoo";
+let niveldojogador = "134";
+let vitorias_derrotas = calcularVitoriasDerrotas(200, 100);
+let nivelRankeada;
 
- function soma (vitorias_derrotas){
-    let somatorio = 34 - 10
-        return somatorio
- }
+function calcularVitoriasDerrotas(numA, numB) {
+    return numA - numB;
+}
 
+if (vitorias_derrotas < 10) {
+    nivelRankeada = "Ferro";
+} else if (vitorias_derrotas <= 20) {
+    nivelRankeada = "Bronze";
+} else if (vitorias_derrotas <= 50) {
+    nivelRankeada = "Prata";
+} else if (vitorias_derrotas <= 80) {
+    nivelRankeada = "Ouro";
+} else if (vitorias_derrotas <= 90) {
+    nivelRankeada = "Diamante";
+} else if (vitorias_derrotas <= 100) {
+    nivelRankeada = "Mestre";
+} else if (vitorias_derrotas > 100) {
+    nivelRankeada = "Grão Mestre";
+}
 
- 
-    if (soma < 10){
-        (nivelRankeada = "Ferro")
- } else if (soma <= 11){
-    (nivelRankeada = "Bronze")
- } else if (soma <= 20){
-    (nivelRankeada = "Bronze")
- } else if (soma <= 21){
-    (nivelRankeada = "prata")
- } else if (soma <= 50){
-    (nivelRankeada = "Prata")
- } else if (soma <= 51) {
-    (nivelRankeada = "Ouro")
- } else if (soma <= 80){
-    (nivelRankeada = "Ouro")
- } else if (soma <= 81){
-    (nivelRankeada = "Diamante")
- } else if (soma <= 90){
-    (nivelRankeada = "Diamante")
- } else if (soma <= 91){
-    (nivelRankeada = "Mestre")
- } else if (soma <= 100){ 
-    (nivelRankeada = "Mestre")
- } else if (soma >= 101){
-    (nivelRankeada = "Grão Mestre")
- }
- 
-console.log ("O" + nomedojogador "esta no level " + niveldojogador "e seu nivel ranqueada é" + nivelRankeada)
+console.log("O " + nomedojogador + " está no level " + niveldojogador + " e seu nível ranqueada é " + nivelRankeada);
+
