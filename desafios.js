@@ -10,16 +10,16 @@ class Heroi {
 
       switch (this.tipo) {
           case 'mago':
-              ataque = 'usou magia';
+              ataque = 'Suiton Dragon';
               break;
           case 'guerreiro':
-              ataque = 'usou espada';
+              ataque = 'A Gunbai';
               break;
           case 'monge':
-              ataque = 'usou artes marciais';
+              ataque = 'Urange Range';
               break;
           case 'ninja':
-              ataque = 'usou shuriken';
+              ataque = 'Katon Fire Shuriken';
               break;
           default:
               ataque = 'usou um ataque indefinido';
